@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Options = ({ children }) => {
     const { me, callAccepted, name, setName, callEnded, leaveCall, callUser} = useContext(SocketContext);
-    const { idToCall, setIdToCall } = useState('');
+    const [ idToCall, setIdToCall ] = useState('');
     const classes = useStyles();
 
   return (
